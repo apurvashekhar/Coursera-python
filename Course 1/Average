@@ -1,0 +1,9 @@
+#find average in a loop
+count = 0
+sum = 0
+for num in (100, 34,567, 9086, -454) :
+    count = count +1
+    sum = sum + num
+    print (count, sum)
+print (count, sum, sum/count)
+print( 'You are all done! :) ')
