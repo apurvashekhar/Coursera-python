@@ -1,0 +1,16 @@
+import re
+start = input ('Enter file name: ')
+handle = open(start)
+lst = list()
+total = 0
+#Ti extract all the numbers
+for lines in handle:
+    line = lines.rstrip()
+    newline = re.findall('[0-9]+',line)
+    #to convert all the list into single list.
+    for numbers in newline:
+        if numbers in lst:
+            continue
+        else:
+            total = total +int(numbers)
+print (total)
