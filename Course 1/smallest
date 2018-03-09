@@ -1,0 +1,11 @@
+#none variable = lack of a value, absence of a value. it's a flag value.
+smallest = None
+print ('Before smallest is none')
+for x in (45, 9, 34, 0, 37, 90):
+    if smallest is None:
+        smallest = x
+    elif x < smallest :
+        smallest = x
+    print (smallest, x)
+print ( 'After' , smallest)
+print ('You have found the smallest number!')
