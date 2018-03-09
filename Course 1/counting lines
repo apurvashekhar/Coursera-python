@@ -1,0 +1,5 @@
+fhand= open ('notworking.txt')
+count = 0
+for Line in fhand:
+    count = count + 1
+print ('Line count', count)
