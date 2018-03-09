@@ -1,0 +1,8 @@
+#boolean vairable = either true or false. Used to know if the thing we are looking for is there or not.
+found = False
+print ('Before', found)
+for i in (45, 73904, 28937498, 44, 984579875894, 8789):
+    if i == 44 :
+        found = True
+    print (found, i)
+print ('After', found)
