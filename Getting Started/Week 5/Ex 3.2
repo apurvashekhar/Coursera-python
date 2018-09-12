@@ -1,13 +1,13 @@
 hours = input("Enter hours: ")
 rate = input("Enter rate: ")
 try:
-    ihours = float(hours)
-    irate = float(rate)
+    fhours = float(hours)
+    frate = float(rate)
     if ihours < 40 :
-        pay = ihours * irate
+        pay = fhours * frate
         print (pay)
     elif ihours > 40 :
-        pay = (40 * irate) + (ihours - 40) * (1.5 * irate)
+        pay = (40 * frate) + (fhours - 40) * (1.5 * frate)
         print (pay)
 except:
     print ("Error, please enter numeric input")
