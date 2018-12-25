@@ -1,7 +1,0 @@
-#summing in a loop
-zork = 0
-for num in (100, 200, 450, 456, 900) :
-    zork = zork + num
-    print (zork, num)
-    #not necessary to print the numbers, can get directly to the total part
-print ('After', zork)

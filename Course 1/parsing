@@ -1,6 +1,0 @@
-text = 'X-DSPAM-Confidence:    0.8475'
-first = text.find(' ')
-second= text.find('5')
-host= text[first : second+1]
-print (float (host))
-

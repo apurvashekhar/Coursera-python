@@ -1,6 +1,0 @@
-hrs = input("Enter Hours:")
-h = float (hrs)
-rte = input("Enter rate per hour:")
-r = float (rte)
-p = h * r
-print ('Pay:',p)

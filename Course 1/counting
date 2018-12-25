@@ -1,7 +1,0 @@
-#counting in a loop
-zork = 0
-print('Before', zork)
-for thing in ( 9, 10, 34, 56, 86, 38 ,894, 8600):
-    zork = zork + 1
-    print (zork, thing)
-print ('After', zork)
