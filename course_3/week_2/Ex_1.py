@@ -1,10 +1,13 @@
+#In this assignment you will read through and parse a file with text and numbers.
+#You will extractall the numbers in the file and compute the sum of the numbers.
+
 import re
-start = input ('Enter file name: ')
-handle = open(start)
+fname = input ('Enter file name: ')
+fhandle = open(fname)
 lst = list()
 total = 0
-#Ti extract all the numbers
-for lines in handle:
+#To extract all the numbers
+for lines in fhandle:
     line = lines.rstrip()
     newline = re.findall('[0-9]+',line)
     #to convert all the list into single list.
