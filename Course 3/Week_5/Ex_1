@@ -1,0 +1,15 @@
+import urllib.request, urllib.parse, urllib.error
+import xml.etree.ElementTree as ET
+
+count = 0
+url = input ('Enter url: ')
+html = urllib.request.urlopen(url).read() #opens and reads the url
+print('Retrieved', len(html), 'characters')
+print(html.decode()) #string from net, has to be decoded
+tree = ET.fromstring(html)
+lst = tree.findall('comments/comment')#all comment tag under comments tag
+print ('Count:', len(lst))
+for item in lst:
+    value = item.find('count').text #gives the text under tag count
+    count = count+int (value) #sum of all counts
+print(count)
