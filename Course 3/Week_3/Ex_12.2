@@ -1,0 +1,14 @@
+import urllib
+from bs4 import BeautifulSoup
+
+url = 'http://python-data.dr-chuck.net/comments_201878.html'
+html = urllib.urlopen(url).read()
+
+soup = BeautifulSoup(html)
+spans = soup('span')
+
+# Calculate a sum of all the numbers in the span tags:
+sum = 0
+for span in spans:
+    sum = sum + int(span.contents[0])
+print (sum)
